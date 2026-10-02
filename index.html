@@ -10,14 +10,67 @@
     <title>Profile card</title>
   </head>
   <body>
-    <div class="shadow-lg w-80 py-4 px-8 border-l-2 border-[#59e0b7] rounded-lg bg-[#fef3c7] text-[#92400e] hover:shadow-xl transition-shadow mt-8 font-medium text-center">
+    <div
+      class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow"
+    >
       <img
         src="ineza copy.jpeg"
-        alt="ineza photo"
-        class="w-30 h-30 rounded-full mx-auto"
+        alt="Portrait of Ineza"
+        class="size-24 rounded-full mx-auto mb-4 ring-4 ring-purple-100"
       />
-      <p>INEZA MUSEKURA Esperance</p>
-      <p>Software engineering student at Auca</p>
+
+      <h2 class="text-2xl font-semibold text-slate-800">
+        Ineza Musekura Esperance
+      </h2>
+
+      <p class="text-sm text-slate-500 mb-4">Software engineering student</p>
+
+      <p class="text-slate-600 leading-relaxed mb-6">
+        I build accessible, responsive interfaces and love clean design systems.
+      </p>
+
+      <div class="flex items-center justify-center gap-5">
+        <div
+          class="inline-block text-xs bg-purple-100 w-30 px-2 py-1 rounded-full"
+        >
+          HTML&CSS
+        </div>
+        <div
+          class="inline-block text-xs bg-purple-100  w-30 px-2 py-1 rounded-full"
+        >
+          Tailwind css
+        </div>
+      </div>
+
+      <a
+        href="#"
+        class="inline-block bg-blue-600 text-white font-medium px-5 py-2 rounded-lg hover:bg-blue-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 mt-4"
+      >
+        Contact me
+      </a>
+    </div>
+
+    <div
+      class="bg-[#fef3c7] text-[#92400e] px-24 py-16 border-l-2 border-[#f59e0b] rounded-lg text-2xl mt-8"
+    ></div>
+
+    <div class="max-w-xs mx-auto mt-8 mb-1 border-purple-500 border rounded-lg p-6 space-y-2">
+      <h2 class="text-xl font-semibold">Live streaming platform</h2>
+
+      <p class="text-4xl font-bold">$45,000</p>
+
+      <ul class="space-y-2">
+        <li>✓ HD live streaming</li>
+        <li>✓ Live chat</li>
+        <li>✓ Multiple stream support</li>
+        <li>✓ Stream Recording</li>
+      </ul>
+
+      <button
+        class="w-full rounded-lg bg-[rgb(79,70,229)] hover:bg-[rgb(67,56,202)] text-white py-2 focus-visible:ring-2 focus-visible:ring-blue-500"
+      >
+        Get Started
+      </button>
     </div>
   </body>
 </html>
