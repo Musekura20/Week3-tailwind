@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive layout</title>
+  </head>
+  <body class="bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+    <!-- Page title -->
+    <header class="bg-blue-900 py-8 text-center text-white dark:bg-blue-950">
+      <h1 class="text-3xl font-bold">Layout Gym</h1>
+      <p class="mt-1 text-blue-200">Five layout patterns built with Tailwind only</p>
+    </header>
+
+    <!-- ================= HERO SECTION (TASK 4) - at the top ================= -->
+    <section class="mx-auto my-10 max-w-5xl px-4">
+      <h2 class="mb-1 text-2xl font-bold text-blue-900 dark:text-blue-300">Hero section</h2>
+      <p class="mb-5 text-slate-500 dark:text-slate-400">Image and text stacked on phones. Side by side from md.</p>
+
+      <div class="flex flex-col items-center gap-8 rounded-lg bg-white p-6 shadow dark:bg-slate-800 md:flex-row md:gap-12 md:p-10">
+        <!-- Image -->
+        <img src="banking.jpeg" alt="Hero image" class="w-full rounded-lg md:w-1/2" />
+
+        <!-- Text + buttons -->
+        <div class="w-full md:w-1/2">
+          <h2 class="text-3xl font-bold text-blue-900 dark:text-blue-200 lg:text-5xl">Banking made simple for everyone</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">
+            Save money, send money and ask for a loan from your phone. Fast, safe and easy.
+          </p>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <button class="w-full rounded-lg bg-blue-800 px-6 py-3 font-medium text-white hover:bg-blue-600 sm:w-auto">
+              Get started
+            </button>
+            <button
+              class="w-full rounded-lg border border-blue-800 px-6 py-3 font-medium text-blue-800 hover:bg-blue-50 dark:border-blue-300 dark:text-blue-300 dark:hover:bg-slate-700 sm:w-auto"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXERCISE 1 ================= -->
+    <section class="mx-auto my-10 max-w-5xl px-4">
+      <h2 class="mb-1 text-2xl font-bold text-blue-900 dark:text-blue-300">Exercise 1 - Nine positions</h2>
+      <p class="mb-5 text-slate-500 dark:text-slate-400">The same box, placed in nine different positions.</p>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Top left</h3>
+          <div class="flex h-64 items-start justify-start rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Top center</h3>
+          <div class="flex h-64 items-start justify-center rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Top right</h3>
+          <div class="flex h-64 items-start justify-end rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Middle left</h3>
+          <div class="flex h-64 items-center justify-start rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Middle center</h3>
+          <div class="flex h-64 items-center justify-center rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Middle right</h3>
+          <div class="flex h-64 items-center justify-end rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Bottom left</h3>
+          <div class="flex h-64 items-end justify-start rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Bottom center</h3>
+          <div class="flex h-64 items-end justify-center rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h3 class="text-center font-semibold">Bottom right</h3>
+          <div class="flex h-64 items-end justify-end rounded-lg border-2 border-blue-200 bg-white p-2 dark:border-slate-600 dark:bg-slate-800">
+            <div class="size-10 rounded bg-blue-600 dark:bg-blue-400"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXERCISE 2 (TASK 2) ================= -->
+    <section class="mx-auto my-10 max-w-5xl px-4">
+      <h2 class="mb-1 text-2xl font-bold text-blue-900 dark:text-blue-300">Exercise 2 - Navbar</h2>
+      <p class="mb-5 text-slate-500 dark:text-slate-400">Logo on the left. Hamburger on the right below md. Links and button from md.</p>
+
+      <nav class="flex items-center justify-between gap-4 rounded-lg bg-white px-6 py-3 shadow dark:bg-slate-800">
+        <img src="BK-logo.png" alt="BK logo" class="size-14" />
+        <button class="md:hidden text-3xl">☰</button>
+        <ul class="hidden md:flex items-center gap-8">
+          <li><a href="#" class="font-medium text-slate-700 hover:text-blue-700 dark:text-slate-200 dark:hover:text-blue-300">Home</a></li>
+          <li><a href="#" class="font-medium text-slate-700 hover:text-blue-700 dark:text-slate-200 dark:hover:text-blue-300">Services</a></li>
+          <li><a href="#" class="font-medium text-slate-700 hover:text-blue-700 dark:text-slate-200 dark:hover:text-blue-300">About us</a></li>
+          <li><a href="#" class="font-medium text-slate-700 hover:text-blue-700 dark:text-slate-200 dark:hover:text-blue-300">Contact</a></li>
+        </ul>
+
+        <button
+          class="hidden md:block rounded-lg bg-blue-800 px-5 py-2 font-medium text-white hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-300"
+        >
+          Sign up
+        </button>
+      </nav>
+    </section>
+
+    <!-- ================= EXERCISE 3 ================= -->
+    <section class="mx-auto my-10 max-w-5xl px-4">
+      <h2 class="mb-1 text-2xl font-bold text-blue-900 dark:text-blue-300">Exercise 3 - Comment list</h2>
+      <p class="mb-5 text-slate-500 dark:text-slate-400">Avatar on the left, comment on the right. The avatar never shrinks.</p>
+
+      <div class="flex flex-col gap-4">
+        <!-- Comment 1 -->
+        <div class="flex gap-4 rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <img src="john avatar.jpeg" alt="John avatar" class="size-12 shrink-0 rounded-full border dark:border-slate-600" />
+          <div>
+            <h3 class="font-bold">John</h3>
+            <p class="text-sm text-slate-400">2 hours ago</p>
+            <p class="mt-1">This is my first comment on this post.</p>
+          </div>
+        </div>
+
+        <!-- Comment 2 (very long text) -->
+        <div class="flex gap-4 rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <img src="sarah avatar.jpeg" alt="Sarah avatar" class="size-12 shrink-0 rounded-full border dark:border-slate-600" />
+          <div>
+            <h3 class="font-bold">Sarah</h3>
+            <p class="text-sm text-slate-400">5 hours ago</p>
+            <p class="mt-1">
+              This is a very long comment to prove that the avatar does not shrink. When a comment has a lot of
+              text, the text box wants to take all the space beside the picture. Because the avatar has
+              shrink-0, it keeps the same size, and the text simply goes to the next line. I really enjoyed
+              this post, and I learned many useful ideas that I can use in my own work. Thank you for sharing
+              them with us, and I hope to read more posts like this one very soon.
+            </p>
+          </div>
+        </div>
+
+        <!-- Comment 3 -->
+        <div class="flex gap-4 rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <img src="david avatar.jpeg" alt="David avatar" class="size-12 shrink-0 rounded-full border dark:border-slate-600" />
+          <div>
+            <h3 class="font-bold">David</h3>
+            <p class="text-sm text-slate-400">1 day ago</p>
+            <p class="mt-1">I really enjoyed reading this post. Thanks for sharing these helpful ideas!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXERCISE 4 ================= -->
+    <section class="mx-auto my-10 max-w-5xl px-4">
+      <h2 class="mb-1 text-2xl font-bold text-blue-900 dark:text-blue-300">Exercise 4 - Dashboard grid</h2>
+      <p class="mb-5 text-slate-500 dark:text-slate-400">A simple bank dashboard: 2 columns on phones, 4 columns from md.</p>
+
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:auto-rows-[minmax(7.5rem,auto)]">
+        <!-- Card 1: full width on phones, 2 columns from md -->
+        <div class="col-span-2 rounded-lg bg-blue-800 p-5 text-white dark:bg-blue-900">
+          <p class="text-blue-200">Total balance</p>
+          <p class="mt-1 text-2xl font-bold sm:text-3xl">RWF 12,450,000</p>
+          <p class="mt-2 text-sm text-green-300">+4.2% this month</p>
+        </div>
+
+        <!-- Card 2: full width on phones, 2 rows from md -->
+        <div class="col-span-2 rounded-lg bg-white p-5 shadow dark:bg-slate-800 md:col-span-1 md:row-span-2">
+          <p class="mb-3 font-bold">Recent transactions</p>
+          <ul class="flex flex-col gap-3 text-sm">
+            <li class="flex justify-between">
+              <span>Salary</span>
+              <span class="font-medium text-green-600 dark:text-green-400">+450,000</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Rent</span>
+              <span class="font-medium text-red-500 dark:text-red-400">-150,000</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Airtime</span>
+              <span class="font-medium text-red-500 dark:text-red-400">-5,000</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Transfer</span>
+              <span class="font-medium text-green-600 dark:text-green-400">+80,000</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Groceries</span>
+              <span class="font-medium text-red-500 dark:text-red-400">-32,000</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-lg bg-white p-5 shadow dark:bg-slate-800">
+          <p class="text-slate-500 dark:text-slate-400">Savings</p>
+          <p class="mt-1 text-xl font-bold">RWF 3.2M</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-lg bg-white p-5 shadow dark:bg-slate-800">
+          <p class="text-slate-500 dark:text-slate-400">Money in</p>
+          <p class="mt-1 text-xl font-bold text-green-600 dark:text-green-400">RWF 530K</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="rounded-lg bg-white p-5 shadow dark:bg-slate-800">
+          <p class="text-slate-500 dark:text-slate-400">Money out</p>
+          <p class="mt-1 text-xl font-bold text-red-500 dark:text-red-400">RWF 187K</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="rounded-lg bg-white p-5 shadow dark:bg-slate-800">
+          <p class="text-slate-500 dark:text-slate-400">Active loans</p>
+          <p class="mt-1 text-xl font-bold">2</p>
+        </div>
+
+        <!-- Card 7: full width -->
+        <div class="col-span-full rounded-lg bg-white p-5 shadow dark:bg-slate-800">
+          <div class="flex justify-between gap-2">
+            <p class="font-bold">Home loan progress</p>
+            <p class="text-slate-500 dark:text-slate-400">75% paid</p>
+          </div>
+          <div class="mt-3 h-4 rounded-full bg-slate-200 dark:bg-slate-700">
+            <div class="h-4 w-3/4 rounded-full bg-blue-700 dark:bg-blue-500"></div>
+          </div>
+          <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">RWF 4,500,000 paid of RWF 6,000,000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXERCISE 5 (TASK 3) ================= -->
+    <section class="mx-auto my-10 max-w-5xl px-4">
+      <h2 class="mb-1 text-2xl font-bold text-blue-900 dark:text-blue-300">Exercise 5 - Holy grail</h2>
+      <p class="mb-5 text-slate-500 dark:text-slate-400">
+        Header, sidebar, main area and footer. On phones the sidebar is above the main area. From lg it is on the left (220px).
+      </p>
+
+      <!-- The page frame: a column, at least 600px tall -->
+      <div class="flex min-h-[600px] flex-col overflow-hidden rounded-lg border bg-white shadow dark:border-slate-700 dark:bg-slate-800">
+        <!-- Header -->
+        <header class="flex items-center justify-between gap-2 bg-blue-900 px-6 py-4 text-white dark:bg-blue-950">
+          <h3 class="text-xl font-bold">BK Online Banking</h3>
+          <p class="text-sm text-blue-200">Welcome, Ineza</p>
+        </header>
+
+        <!-- Middle: sidebar + main. 1 column on phones, 220px + rest from lg. flex-1 pushes the footer down -->
+        <div class="grid flex-1 grid-cols-1 lg:grid-cols-[220px_minmax(0,1fr)]">
+          <!-- Sidebar -->
+          <aside class="bg-slate-100 p-4 dark:bg-slate-900">
+            <p class="mb-3 font-bold text-slate-500 dark:text-slate-400">Menu</p>
+            <ul class="flex flex-col gap-1">
+              <li><a href="#" class="block rounded bg-blue-100 px-3 py-2 font-medium text-blue-900 dark:bg-blue-900 dark:text-blue-100">Dashboard</a></li>
+              <li><a href="#" class="block rounded px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-700">Accounts</a></li>
+              <li><a href="#" class="block rounded px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-700">Transfers</a></li>
+              <li><a href="#" class="block rounded px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-700">Loans</a></li>
+              <li><a href="#" class="block rounded px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-700">Settings</a></li>
+            </ul>
+          </aside>
+
+          <!-- Main area -->
+          <main class="p-6">
+            <h3 class="text-2xl font-bold">Your accounts</h3>
+            <p class="mt-1 text-slate-500 dark:text-slate-400">Here is a quick look at your money today.</p>
+
+            <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div class="rounded-lg border p-4 dark:border-slate-700">
+                <p class="text-slate-500 dark:text-slate-400">Current account</p>
+                <p class="mt-1 text-xl font-bold">RWF 1,250,000</p>
+              </div>
+              <div class="rounded-lg border p-4 dark:border-slate-700">
+                <p class="text-slate-500 dark:text-slate-400">Savings account</p>
+                <p class="mt-1 text-xl font-bold">RWF 3,200,000</p>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-lg bg-blue-50 p-4 dark:bg-blue-950">
+              <p class="font-bold text-blue-900 dark:text-blue-200">Need a loan?</p>
+              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Use our loan calculator to see your monthly payment.</p>
+              <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 text-white hover:bg-blue-600">
+                Calculate loan
+              </button>
+            </div>
+          </main>
+        </div>
+
+        <!-- Footer: always at the bottom -->
+        <footer class="bg-slate-800 px-6 py-3 text-center text-sm text-slate-300 dark:bg-slate-950">
+          &copy; 2026 Bank of Kigali. All rights reserved.
+        </footer>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT CARDS ================= -->
+    <section class="mx-auto my-10 max-w-5xl px-4">
+      <h2 class="mb-1 text-2xl font-bold text-blue-900 dark:text-blue-300">Product cards</h2>
+      <p class="mb-5 text-slate-500 dark:text-slate-400">
+        8 cards: 1 column on phones, 2 from sm, 3 from lg, 4 from xl. Gap and padding grow at lg.
+      </p>
+
+      <div class="grid grid-cols-1 gap-4 p-2 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 lg:p-6 xl:grid-cols-4">
+        <!-- Card 1 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">Wireless headphones</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Clear sound and long battery life.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 45,000</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">School backpack</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Strong bag with a laptop pocket.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 28,000</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">Running sneakers</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Light shoes for sport and daily use.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 60,000</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">Smart watch</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Time, steps and phone alerts.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 85,000</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">Water bottle</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Keeps water cold for 12 hours.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 12,000</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">Notebook set</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Pack of 5 notebooks for class.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 6,500</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">Phone case</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Protects your phone from falls.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 5,000</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="flex flex-col rounded-lg bg-white p-4 shadow dark:bg-slate-800">
+          <div class="aspect-video rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          <h3 class="mt-3 font-bold">Desk lamp</h3>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Soft light for night study.</p>
+          <p class="mt-3 text-lg font-bold text-blue-800 dark:text-blue-300">RWF 15,000</p>
+          <button class="mt-3 rounded-lg bg-blue-800 px-4 py-2 font-medium text-white hover:bg-blue-600">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
